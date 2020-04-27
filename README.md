@@ -77,6 +77,18 @@ STPAccessConfiger.developEnv = Env_Development;
 +(void)loginEx:(NSString*)phone passwd:(NSString*)passwd thirdCode:(NSString*)thirdCode block:(void (^)(STPUserModel *user,NSError *error))block;
 ```
 
+. 设置当前操作的设备ID与设备AppId
+
+```ruby
+/**
+设置操作点读笔
+
+@param currDeviceID 点读笔设备ID
+@param appId 点读笔AppId
+*/
+-(void)setCurrDeviceID:(NSString * _Nonnull)currDeviceID  appId:(NSString *_Nonnull) appId;
+
+```
 ### 配网流程
 
 . 首先连接硬件蓝牙，然后将wifi名称和密码信息（包括wifi密码和用户ID）发送到硬件设备端。发送之后硬件会提示：正在配网中。 此时APP端定时轮询获取配网的结果。
