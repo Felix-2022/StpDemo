@@ -35,7 +35,7 @@
 
 -(void) initStpSDK{
     STPAccessConfiger.developEnv = Env_Development;
-    [STPAccessConfiger setPackageId:@"aie.app"];
+    [STPAccessConfiger setPackageId:@"stp.sdk"];
 }
 
 -(void) stpLogin{
@@ -72,8 +72,6 @@
         @"关闭设备",
         @"修改设备的名称",
         @"修改设备音量",
-        @"检测新版本",
-        @"新版本升级",
         @"设备重启",
         @"修改用户名称",
         @"获取绘本资源列表",
@@ -208,32 +206,6 @@
             break;
         case 6:
         {
-            // 检测新版本
-            [STPDeviceApi checkDeviceVersion:^(BOOL update, NSString * _Nonnull version, NSError * _Nullable error) {
-                if (error) {
-                    message = error.description;
-                } else {
-                    message = [NSString stringWithFormat:@"是否成功 isSuccess ： %d",update];
-                }
-                [self showMessage:message];
-            }];
-        }
-            break;
-        case 7:
-        {
-            //更新新版本
-            [STPDeviceApi updateDevice:^(id  _Nonnull response, NSError * _Nullable error) {
-                if (error) {
-                    message = error.description;
-                } else {
-                    message = [NSString stringWithFormat:@"： %@",response];
-                }
-                [self showMessage:message];
-            }];
-        }
-            break;
-        case 8:
-        {
             [STPDeviceApi restartDevice:^(BOOL isSuccess, NSError * _Nonnull error) {
                 if (error) {
                     message = error.description;
@@ -244,7 +216,7 @@
             }];
         }
             break;
-        case 9:
+        case 7:
         {
             [STPUserApi updateUserName:@"我是新用户" completionBlock:^(BOOL isSucceed, NSError * _Nullable error) {
                 if (error) {
@@ -256,7 +228,7 @@
             }];
         }
             break;
-        case 10:
+        case 8:
         {
             [STPPictureBookApi getAllPicbookList:0 count:20 block:^(STPPicBookResourceList * _Nullable list, NSError * _Nullable error) {
                 if (error) {
@@ -268,7 +240,7 @@
             }];
         }
             break;
-        case 11:
+        case 9:
         {
             [STPPictureBookApi searchPicbookList:@"妈妈" block:^(STPPicBookResourceList * _Nullable list, NSError * _Nullable error) {
                 if (error) {
@@ -280,7 +252,7 @@
             }];
         }
             break;
-        case 12:
+        case 10:
         {
             [STPPictureBookApi getPicbookDetail:@"3562496" block:^(STPPicBookDetailModel * _Nullable detailModel, NSError * _Nullable error) {
                 if (error) {
@@ -292,7 +264,7 @@
             }];
         }
             break;
-        case 13:
+        case 11:
         {
             [STPPictureBookApi uploadPicbook:@"2576772" block:^(BOOL isSuss, NSError * _Nullable error) {
                 if (error) {
@@ -304,7 +276,7 @@
             }];
         }
             break;
-        case 14:
+        case 12:
         {
             [STPPictureBookApi deletePicbook:@"2576772" block:^(BOOL isSuss, NSError * _Nullable error) {
                 if (error) {
@@ -316,7 +288,7 @@
             }];
         }
             break;
-        case 15:
+        case 13:
         {
             [STPPictureBookApi getLocalPicbookList:0 count:7 block:^(STPPicBookDetailList * _Nullable list, NSError * _Nullable error) {
                 if (error) {
@@ -328,7 +300,7 @@
             }];
         }
             break;
-        case 16:
+        case 14:
         {
             [STPPictureBookApi getSdcardInfo:^(STPSdcardInfo * _Nullable cardInfo, NSError * _Nullable error) {
                 if (error) {
@@ -340,7 +312,7 @@
             }];
         }
             break;
-        case 17:
+        case 15:
         {
             [STPStudyReportApi getStudyAchieveData:@"point-reading" startDate:@"2020-03-24" endDate:@"2020-03-31" block:^(STPStudyAchieveList * _Nullable list, NSError * _Nullable error) {
                 if (error) {
@@ -352,7 +324,7 @@
             }];
         }
             break;
-        case 18:
+        case 16:
         {
             [STPStudyReportApi getStudyAchieveData:@"point-reading" fromId:0 count:7 block:^(STPStudyAchieveList * _Nullable list, NSError * _Nullable error) {
                 if (error) {
@@ -364,7 +336,7 @@
             }];
         }
             break;
-        case 19:
+        case 17:
         {
             [STPStudyReportApi getStudyAchieveDetailData:@"duration" fromId:0 count:7 block:^(STPStudyAchieveDetail * _Nullable list, NSError * _Nullable error) {
                 if (error) {
@@ -376,7 +348,7 @@
             }];
         }
             break;
-        case 20:
+        case 18:
         {
             [STPStudyReportApi getFollowReadData:@"2020-03-24" endDate:@"2020-03-31" block:^(NSArray * _Nullable list, NSError * _Nullable error) {
                 if (error) {
@@ -388,7 +360,7 @@
             }];
         }
             break;
-        case 21:
+        case 19:
         {
             [STPStudyReportApi getFollowReadData:0 count:7 block:^(NSArray * _Nullable list, NSError * _Nullable error) {
                 if (error) {
@@ -400,7 +372,7 @@
             }];
         }
             break;
-        case 22:{
+        case 20:{
             [STPAuthApi logOut:^(BOOL isSuccess, NSError * _Nonnull error) {
                 if (error) {
                     [self showMessage:error.description];
