@@ -69,8 +69,10 @@ typedef NS_ENUM(NSInteger,STPDeviceBindResult){
                 _wifiPassword = [_wifiPassword stringByReplacingOccurrencesOfString:@"#" withString:@"\\#"];
             }
             
+            NSDate* date = [NSDate dateWithTimeIntervalSinceNow:0];//获取当前时间0秒后的时间
+            NSTimeInterval time=[date timeIntervalSince1970];
             // TODO : 在此需要将用户ID发送到硬件设备，用于硬件设备绑定用户。userid (需要替换)
-            object.wifiPassword = [NSString stringWithFormat:@"v1#%@#%@#",_wifiPassword,@"ae:e92b45fe2191920c8f26aa815af6ba92"]; // 用户ID
+            object.wifiPassword = [NSString stringWithFormat:@"v1#%@#%@#%.0f#",_wifiPassword,@"ae:e92b45fe2191920c8f26aa815af6ba92",time]; // 用户ID
             [[STPBluetoothManager sharedInstance] setOpmodeObject:object];
             [self bindResultCountdown];
         }
