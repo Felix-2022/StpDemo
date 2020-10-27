@@ -1,10 +1,30 @@
-### 蓝牙配网Demo
+# BLE demo
 
+## Requirements
 ```ruby
-参见blueTooth 工程
+ble demo，需要引入 demo里对应的pod 库
 ```
 
-### StpOCSDK地址
 ```ruby
-https://github.com/Felix-2022/StpOCSDK
+需要info.plist 添加蓝牙权限
 ```
+
+```ruby
+需要真机运行测试蓝牙连接
+```
+
+
+##如果需要模拟器调试  
+
+```ruby
+
+首先 需要更新 STPBluetoothManager 文件
+
+然后需要将 Xcode -> File -> Workspace Setting -> Legacy Build System
+使用老版本编译 即可
+```
+
+
+## Author
+
+Kris

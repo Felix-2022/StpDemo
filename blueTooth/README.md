@@ -13,6 +13,18 @@ ble demo，需要引入 demo里对应的pod 库
 需要真机运行测试蓝牙连接
 ```
 
+
+##如果需要模拟器调试  
+
+```ruby
+
+首先 需要更新 STPBluetoothManager 文件
+
+然后需要将 Xcode -> File -> Workspace Setting -> Legacy Build System
+使用老版本编译 即可
+```
+
+
 ## Author
 
 Kris

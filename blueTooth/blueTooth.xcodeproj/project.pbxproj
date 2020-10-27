@@ -10,13 +10,13 @@
 		880546D72436DAB0009A6C8A /* STPBingsResultController.m in Sources */ = {isa = PBXBuildFile; fileRef = 880546B92436DAAF009A6C8A /* STPBingsResultController.m */; };
 		880546D82436DAB0009A6C8A /* STPSearchDeviceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 880546BB2436DAAF009A6C8A /* STPSearchDeviceController.m */; };
 		880546D92436DAB0009A6C8A /* STPSocketManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 880546BD2436DAAF009A6C8A /* STPSocketManager.m */; };
-		880546DA2436DAB0009A6C8A /* STPBLEdataFunc.m in Sources */ = {isa = PBXBuildFile; fileRef = 880546C52436DAAF009A6C8A /* STPBLEdataFunc.m */; };
-		880546DB2436DAB0009A6C8A /* STPOpmodeObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 880546C62436DAAF009A6C8A /* STPOpmodeObject.m */; };
-		880546DC2436DAB0009A6C8A /* STPBLEDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 880546C72436DAAF009A6C8A /* STPBLEDevice.m */; };
 		880546DE2436DAB0009A6C8A /* STPSelectNetController.m in Sources */ = {isa = PBXBuildFile; fileRef = 880546D22436DAB0009A6C8A /* STPSelectNetController.m */; };
 		880546DF2436DAB0009A6C8A /* STPBluetoothManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 880546D42436DAB0009A6C8A /* STPBluetoothManager.m */; };
 		880546E02436DAB0009A6C8A /* STPConnectReadyController.m in Sources */ = {isa = PBXBuildFile; fileRef = 880546D62436DAB0009A6C8A /* STPConnectReadyController.m */; };
-		886BD25B243B2D970077F054 /* libblufiSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 886BD25A243B2D970077F054 /* libblufiSDK.a */; };
+		8816C87C2543DA8900CE8060 /* STPBLEdataFunc.m in Sources */ = {isa = PBXBuildFile; fileRef = 880546C52436DAAF009A6C8A /* STPBLEdataFunc.m */; };
+		8816C87D2543DA8900CE8060 /* STPOpmodeObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 880546C62436DAAF009A6C8A /* STPOpmodeObject.m */; };
+		8816C87E2543DA8900CE8060 /* STPBLEDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 880546C72436DAAF009A6C8A /* STPBLEDevice.m */; };
+		8816C8892543DD6400CE8060 /* libblufiSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8816C8882543DD6400CE8060 /* libblufiSDK.a */; };
 		88C51AC02126661B0092F237 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 88C51ABF2126661B0092F237 /* AppDelegate.m */; };
 		88C51AC32126661B0092F237 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88C51AC22126661B0092F237 /* ViewController.m */; };
 		88C51AC62126661B0092F237 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88C51AC42126661B0092F237 /* Main.storyboard */; };
@@ -48,12 +48,12 @@
 		880546D42436DAB0009A6C8A /* STPBluetoothManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STPBluetoothManager.m; sourceTree = "<group>"; };
 		880546D62436DAB0009A6C8A /* STPConnectReadyController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STPConnectReadyController.m; sourceTree = "<group>"; };
 		8807324B2438CAC300B2280B /* blueTooth.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = blueTooth.entitlements; sourceTree = "<group>"; };
-		886BD255243B2D970077F054 /* PacketCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PacketCommand.h; sourceTree = "<group>"; };
-		886BD256243B2D970077F054 /* dh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dh.h; sourceTree = "<group>"; };
-		886BD257243B2D970077F054 /* RSAObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSAObject.h; sourceTree = "<group>"; };
-		886BD258243B2D970077F054 /* Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Prefix.pch; sourceTree = "<group>"; };
-		886BD259243B2D970077F054 /* DH_AES.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DH_AES.h; sourceTree = "<group>"; };
-		886BD25A243B2D970077F054 /* libblufiSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libblufiSDK.a; sourceTree = "<group>"; };
+		8816C8832543DD6400CE8060 /* PacketCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PacketCommand.h; sourceTree = "<group>"; };
+		8816C8842543DD6400CE8060 /* dh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dh.h; sourceTree = "<group>"; };
+		8816C8852543DD6400CE8060 /* RSAObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSAObject.h; sourceTree = "<group>"; };
+		8816C8862543DD6400CE8060 /* Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Prefix.pch; sourceTree = "<group>"; };
+		8816C8872543DD6400CE8060 /* DH_AES.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DH_AES.h; sourceTree = "<group>"; };
+		8816C8882543DD6400CE8060 /* libblufiSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libblufiSDK.a; sourceTree = "<group>"; };
 		88C51ABB2126661B0092F237 /* blueTooth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = blueTooth.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		88C51ABE2126661B0092F237 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		88C51ABF2126661B0092F237 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -72,7 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				886BD25B243B2D970077F054 /* libblufiSDK.a in Frameworks */,
+				8816C8892543DD6400CE8060 /* libblufiSDK.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -122,40 +122,40 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		886BD251243B2D970077F054 /* lib */ = {
+		8816C87F2543DD6400CE8060 /* lib */ = {
 			isa = PBXGroup;
 			children = (
-				886BD252243B2D970077F054 /* usr */,
-				886BD25A243B2D970077F054 /* libblufiSDK.a */,
+				8816C8802543DD6400CE8060 /* usr */,
+				8816C8882543DD6400CE8060 /* libblufiSDK.a */,
 			);
 			name = lib;
 			path = blueTooth/lib;
 			sourceTree = "<group>";
 		};
-		886BD252243B2D970077F054 /* usr */ = {
+		8816C8802543DD6400CE8060 /* usr */ = {
 			isa = PBXGroup;
 			children = (
-				886BD253243B2D970077F054 /* local */,
+				8816C8812543DD6400CE8060 /* local */,
 			);
 			path = usr;
 			sourceTree = "<group>";
 		};
-		886BD253243B2D970077F054 /* local */ = {
+		8816C8812543DD6400CE8060 /* local */ = {
 			isa = PBXGroup;
 			children = (
-				886BD254243B2D970077F054 /* include */,
+				8816C8822543DD6400CE8060 /* include */,
 			);
 			path = local;
 			sourceTree = "<group>";
 		};
-		886BD254243B2D970077F054 /* include */ = {
+		8816C8822543DD6400CE8060 /* include */ = {
 			isa = PBXGroup;
 			children = (
-				886BD255243B2D970077F054 /* PacketCommand.h */,
-				886BD256243B2D970077F054 /* dh.h */,
-				886BD257243B2D970077F054 /* RSAObject.h */,
-				886BD258243B2D970077F054 /* Prefix.pch */,
-				886BD259243B2D970077F054 /* DH_AES.h */,
+				8816C8832543DD6400CE8060 /* PacketCommand.h */,
+				8816C8842543DD6400CE8060 /* dh.h */,
+				8816C8852543DD6400CE8060 /* RSAObject.h */,
+				8816C8862543DD6400CE8060 /* Prefix.pch */,
+				8816C8872543DD6400CE8060 /* DH_AES.h */,
 			);
 			path = include;
 			sourceTree = "<group>";
@@ -163,9 +163,8 @@
 		88C51AB22126661B0092F237 = {
 			isa = PBXGroup;
 			children = (
-				886BD251243B2D970077F054 /* lib */,
+				8816C87F2543DD6400CE8060 /* lib */,
 				880546B82436DAAF009A6C8A /* Bindings */,
-				88C7735821269B5B0004E9D2 /* Resource */,
 				88C51ABD2126661B0092F237 /* blueTooth */,
 				88C51ABC2126661B0092F237 /* Products */,
 				45CB5F21C92E6D51AEB53CC5 /* Pods */,
@@ -196,14 +195,6 @@
 				88C51ACD2126661D0092F237 /* main.m */,
 			);
 			path = blueTooth;
-			sourceTree = "<group>";
-		};
-		88C7735821269B5B0004E9D2 /* Resource */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Resource;
-			path = blueTooth/Resource;
 			sourceTree = "<group>";
 		};
 		FCA8770B46783F5FC07FA3C4 /* Frameworks */ = {
@@ -307,17 +298,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8816C87C2543DA8900CE8060 /* STPBLEdataFunc.m in Sources */,
+				8816C87D2543DA8900CE8060 /* STPOpmodeObject.m in Sources */,
+				8816C87E2543DA8900CE8060 /* STPBLEDevice.m in Sources */,
 				880546E02436DAB0009A6C8A /* STPConnectReadyController.m in Sources */,
-				880546DC2436DAB0009A6C8A /* STPBLEDevice.m in Sources */,
 				880546D82436DAB0009A6C8A /* STPSearchDeviceController.m in Sources */,
-				880546DA2436DAB0009A6C8A /* STPBLEdataFunc.m in Sources */,
 				88C51AC32126661B0092F237 /* ViewController.m in Sources */,
 				880546D92436DAB0009A6C8A /* STPSocketManager.m in Sources */,
 				880546DE2436DAB0009A6C8A /* STPSelectNetController.m in Sources */,
 				880546DF2436DAB0009A6C8A /* STPBluetoothManager.m in Sources */,
 				88C51ACE2126661D0092F237 /* main.m in Sources */,
 				880546D72436DAB0009A6C8A /* STPBingsResultController.m in Sources */,
-				880546DB2436DAB0009A6C8A /* STPOpmodeObject.m in Sources */,
 				88C51AC02126661B0092F237 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -462,8 +453,9 @@
 				CODE_SIGN_ENTITLEMENTS = blueTooth/blueTooth.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = N843SH92UV;
+				DEVELOPMENT_TEAM = 52AHMZ5PN7;
 				ENABLE_BITCODE = NO;
+				GCC_OPTIMIZATION_LEVEL = 1;
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/PrefixHeader.pch";
 				INFOPLIST_FILE = blueTooth/Info.plist;
@@ -474,8 +466,25 @@
 				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/blueTooth/Bindings/lib",
 					"$(PROJECT_DIR)/blueTooth/lib",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"BabyBluetooth\"",
+					"-l\"CocoaAsyncSocket\"",
+					"-l\"Masonry\"",
+					"-l\"ReactiveObjC\"",
+					"-l\"crypto\"",
+					"-l\"ssl\"",
+					"-framework",
+					"\"CFNetwork\"",
+					"-framework",
+					"\"Foundation\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"UIKit\"",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.blestpDemo3;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -495,6 +504,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = N843SH92UV;
 				ENABLE_BITCODE = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/PrefixHeader.pch";
 				INFOPLIST_FILE = blueTooth/Info.plist;

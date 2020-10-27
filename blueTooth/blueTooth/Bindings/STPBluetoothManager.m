@@ -4,7 +4,9 @@
 #import "STPBLEdataFunc.h"
 #import "STPOpmodeObject.h"
 #import "BabyBluetooth.h"
+#if !(TARGET_IPHONE_SIMULATOR)
 #import "PacketCommand.h"
+#endif
 #import "DH_AES.h"
 #define filterBLEname   @"BLUFI"
 #define UUIDSTR_ESPRESSIF_SERVICE              @"FFFF"
@@ -38,14 +40,18 @@
 - (instancetype)init {
     if (self = [super init]) {
         _bluetooth = [BabyBluetooth shareBabyBluetooth];
-        [self setupBluetoothDelegate];
         _BLEDeviceArray = [NSMutableArray new];
         self.blestate   = STPBleStateIdle;
         self.sequence   = 0;
+#if !(TARGET_IPHONE_SIMULATOR)
+        [self setupBluetoothDelegate];
         self.rsaobject  = [DH_AES DHGenerateKey];
+#endif
     }
     return self;
 }
+
+#if !(TARGET_IPHONE_SIMULATOR)
 
 - (void)setupBluetoothDelegate {
     @weakify(self);
@@ -632,6 +638,6 @@
         break;
     }
 }
-
+#endif
 
 @end
