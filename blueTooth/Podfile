@@ -6,7 +6,7 @@ target 'blueTooth' do
     pod 'CocoaAsyncSocket'
     pod 'ReactiveObjC'
     pod 'BabyBluetooth'
-    pod 'OpenSSL'
+    pod 'OpenSSL-Universal'
 end
 
 

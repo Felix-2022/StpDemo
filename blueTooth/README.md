@@ -20,8 +20,13 @@ ble demo，需要引入 demo里对应的pod 库
 
 首先 需要更新 STPBluetoothManager 文件
 
-然后需要将 Xcode -> File -> Workspace Setting -> Legacy Build System
-使用老版本编译 即可
+debug模式忽略.a或者framework
+
+在build Setting–> EXCLUDED_SOURCE_FILE_NAMES -> Debug -> add any iOS Simulator SDK 添加 libblufiSDK.a
+
+
+
+
 ```
 
 
