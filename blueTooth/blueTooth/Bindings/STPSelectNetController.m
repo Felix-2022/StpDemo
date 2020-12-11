@@ -165,7 +165,10 @@
 - (void)connectWifiAction:(NSString*)password{
     STPBingsResultController *resultVC = [STPBingsResultController new];
     resultVC.wifiSSid = self.wifiNameTxtField.text;
-    resultVC.wifiPassword = password;
+    password = [password stringByReplacingOccurrencesOfString:@"\\" withString:@"\\\\"];
+    NSString *newPassword = [NSString stringWithString:password];
+    NSLog(@"test -- %@",newPassword);
+    resultVC.wifiPassword = newPassword;
     [self.navigationController pushViewController:resultVC animated:YES];
 }
 
